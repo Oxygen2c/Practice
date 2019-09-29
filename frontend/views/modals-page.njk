@@ -1,0 +1,27 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+
+    <main class="main">
+        <div class="container">
+            <h1>Modals</h1>
+            <input class="pop1" type="button" value="pop1" data-popup popup-name="form1">
+            <input class="pop2" type="button" value="pop2" data-popup popup-name="form2">
+        </div>
+        <div class="overlay"></div>
+        <div class="modal-window"></div>
+    </main>
+
+    <form action="" class="form1">
+        Имя<br><input type="text"><br>
+        Имя<br><input type="text"><br>
+        Имя<br><input type="text"><br>
+        Имя<br><input type="text"><br>
+    </form>
+    <form action="" class="form2">
+        Фамилия<br><input type="text"><br>
+        Фамилия<br><input type="text"><br>
+        Фамилия<br><input type="text"><br>
+        Фамилия<br><input type="text"><br>
+    </form>
+{% endblock %}
